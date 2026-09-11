@@ -104,9 +104,10 @@ Follow these steps for any UI build/restyle task.
    (If the request also spans multiple sections/pages, this multiplies with the
    granularity rule below: run the per-section queries once **per brand**.)
 
-   **Translate intent into standard English UI terms** (轮播→carousel, 落地页→landing
-   page, 面包屑→breadcrumb) — the index is English-dominant and the canonical term
-   matches best.
+   **Translate intent into standard English UI terms.** The index is English-dominant,
+   so it matches on a component's canonical name: translate a non-English request, and
+   normalize informal English the same way ("sliding banner" → carousel, "nav trail" →
+   breadcrumb, "splash page" → landing page).
 
    **Match query granularity to the request — keep shared anchors identical.** The
    index holds both whole-page assets and individual sections, and **granularity is
